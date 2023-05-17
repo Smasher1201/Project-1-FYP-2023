@@ -1,0 +1,40 @@
+﻿<Window x:Class="Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="960">
+    <Grid Margin="8,8,8,8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="801*"/>
+            <ColumnDefinition Width="143*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Main Page" FontSize="24" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="16,10,0,0">
+        </TextBlock>
+        <Button x:Name="btnTutorial" Content="Help" Click="btnSubPage1_Click" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="250" Height="50" Margin="60,463,0,0"/>
+        <Button x:Name="btnSubPage2" Background="Orange" Content="Tutorial" Click="btnSubPage2_Click" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="250" Height="50" Margin="60,377,0,0"/>
+        <Label x:Name="lblAccount" Content="User Name:" HorizontalAlignment="Left" Height="30" Margin="20,100,0,0" VerticalAlignment="Top" Width="94" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblLog" Content="Process Logs:" HorizontalAlignment="Left" Height="30" Margin="374,87,0,0" VerticalAlignment="Top" Width="94" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblPassword" Content="Password:" HorizontalAlignment="Left" Height="30" Margin="20,136,0,0" VerticalAlignment="Top" Width="79" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txbAccount" HorizontalAlignment="Left" Height="25" Margin="126,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="14"/>
+        <PasswordBox x:Name="txbPassword" PasswordChar="*" HorizontalAlignment="Left" Height="25" Margin="126,140,0,0" VerticalAlignment="Top" Width="220" FontSize="14"/>
+        <Label Content="Date and Time:" Grid.Column="0" HorizontalAlignment="Left" Margin="20,62,0,0" VerticalAlignment="Top" Width="130" FontSize="14" Height="29" FontWeight="Bold"/>
+        <Label  x:Name="lblTime" Content="" HorizontalAlignment="Left" Margin="133,63,0,0" VerticalAlignment="Top" FontSize="14" Width="197" Height="30"/>
+        <Button x:Name="btnLogin" FontSize="16" Background="Green" Content="Login" HorizontalAlignment="Left" Height="36" Margin="56,186,0,0" VerticalAlignment="Top" Width="120" Click="btnLogin_Click" FontWeight="Bold"/>
+        <Button x:Name="btnLogout" FontSize="16" Background="Yellow" Content="Logout" HorizontalAlignment="Left" Height="36" Margin="208,186,0,0" VerticalAlignment="Top" Width="120" Click="btnLogout_Click" FontWeight="Bold"/>
+        <TextBox x:Name="txbLogs" HorizontalAlignment="Left" Height="427" Margin="379,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="551" VerticalScrollBarVisibility="Visible" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.274"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.495"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btnSubPage3" Background="Blue" Content="Start" Click="btnSubPage3_Click" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Width="250" Height="50" Margin="60,295,0,0"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="787,16,0,0" VerticalAlignment="Top" Width="141" Source="C:\Users\jasac\Downloads\Project(1)\Project(1)\Project\RPLogo.PNG" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
